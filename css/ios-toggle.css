@@ -1,0 +1,274 @@
+body {
+  font-family: sans-serif;
+}
+
+/*
+
+.toggle-switch {
+    width:73px;
+    height:28px;
+    margin:20px;
+    padding:3px;
+    overflow:hidden;
+    -webkit-transform:translateZ(0);
+}
+
+.toggle-switch .bg {
+    width:73px; 
+    height:28px;
+    margin-bottom:-27px;
+    -webkit-border-radius:14px;
+    background-image:-webkit-gradient(linear,0 0, 100% 0, from(#08c), color-stop(50%, #08c), color-stop(51%, #fefefe), to(#eee));
+    -webkit-background-size:200%;
+    -webkit-transition:background-position 0.2s linear;
+    background-position:100%;
+    -webkit-box-shadow:inset 0 0 4px rgba(0,0,0,0.7), inset 0 14px 0 rgba(0,0,0,0.1);
+}
+
+.toggle-switch label { display:-webkit-box; width:95px; position:relative; z-index:1;
+    -webkit-transform:translateX(-50%);
+    -webkit-transition:-webkit-transform 0.2s linear;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.toggle-switch label  { display:block; width:50%; }
+.toggle-switch input:checked ~ .bg { background-position-x:0 }
+.toggle-switch input:checked ~ label { -webkit-transform:translateX(0); }
+.toggle-switch input:checked ~ label :last-child { opacity:0; }
+
+.toggle-switch input { display:none; }
+
+.toggle-switch label  {
+    padding:0 15px;
+    font-size:14px;
+    line-height:26px;
+    font-weight:bold;
+    -webkit-box-sizing:border-box;
+}
+
+.toggle-switch label :first-child { position:relative; color:#fff; padding-right:0; }
+
+.toggle-switch label :last-child {
+    padding-left:33px;
+    color:#666;
+    text-shadow:1px 1px 0 #fff;
+    opacity:0.7;
+    -webkit-transition:opacity 0.15s linear;
+}
+
+.toggle-switch label :first-child::after {
+    position:absolute;
+    right:-28px;
+    top:-1px;
+    display:inline-block;
+    width:28px;
+    height:28px;
+    border:1px solid #666;
+    -webkit-border-radius:14px;
+    background-color:#ccc;
+    -webkit-box-sizing:border-box;
+    content:"";
+    -webkit-box-shadow:0 0 2px rgba(0,0,0,0.7), inset 0 0 3px 1px rgba(255,255,255,1);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#bbb), to(#fefefe));
+}
+*/
+.ios-toggle {
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.ios-toggle .handle {
+  height: 24px;
+  white-space: nowrap;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  -o-transition: -o-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.ios-toggle .handle b {
+  display: inline-block;
+  -webkit-box-shadow: inset 0 1px 1px white, 0 0 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: inset 0 1px 1px white, 0 0 3px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 1px 1px white, 0 0 3px rgba(0, 0, 0, 0.35);
+  background: #E8E8E8;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d7d7d7), color-stop(100%, #fbfbfb));
+  background: -webkit-linear-gradient(top, #d7d7d7, #fbfbfb);
+  background: -moz-linear-gradient(top, #d7d7d7, #fbfbfb);
+  background: -o-linear-gradient(top, #d7d7d7, #fbfbfb);
+  background: linear-gradient(top, #d7d7d7, #fbfbfb);
+  background: linear-gradient(to bottom, #d7d7d7, #fbfbfb);
+}
+.ios-toggle .handle:before, .ios-toggle .handle:after {
+  display: inline-block;
+  line-height: 24px;
+  height: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+}
+.ios-toggle .handle:before {
+  content: 'On';
+  color: #fff;
+}
+.ios-toggle .handle:after {
+  content: 'Off';
+  color: #7F7F7F;
+}
+.ios-toggle [type=checkbox] {
+  display: none;
+}
+.ios4 .ios-toggle {
+  height: 26px;
+  width: 95px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+  background: #FFF;
+  background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #dddddd), color-stop(50%, #fafafa), color-stop(51%, #ffffff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(to bottom, #dddddd, #fafafa 50%, #ffffff 51%, #ffffff);
+  background: -moz-linear-gradient(to bottom, #dddddd, #fafafa 50%, #ffffff 51%, #ffffff);
+  background: -o-linear-gradient(to bottom, #dddddd, #fafafa 50%, #ffffff 51%, #ffffff);
+  background: linear-gradient(to bottom, #dddddd, #fafafa 50%, #ffffff 51%, #ffffff);
+  background: linear-gradient(to bottom, #dddddd, #fafafa 50%, #ffffff 51%, #ffffff);
+}
+.ios4 .ios-toggle:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -26px;
+  margin-left: 0;
+  background: #3680F8;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3278ef), color-stop(50%, #3680f8), color-stop(51%, #4e91f3), color-stop(100%, #73abfc)) no-repeat;
+  background: -webkit-linear-gradient(top, #3278ef, #3680f8 50%, #4e91f3 51%, #73abfc) no-repeat;
+  background: -moz-linear-gradient(top, #3278ef, #3680f8 50%, #4e91f3 51%, #73abfc) no-repeat;
+  background: -o-linear-gradient(top, #3278ef, #3680f8 50%, #4e91f3 51%, #73abfc) no-repeat;
+  background: linear-gradient(top, #3278ef, #3680f8 50%, #4e91f3 51%, #73abfc) no-repeat;
+  background: linear-gradient(to bottom, #3278ef, #3680f8 50%, #4e91f3 51%, #73abfc);
+  -webkit-transition: margin-left 0.2s ease-in-out;
+  -moz-transition: margin-left 0.2s ease-in-out;
+  -o-transition: margin-left 0.2s ease-in-out;
+  transition: margin-left 0.2s ease-in-out;
+}
+.ios4 .ios-toggle .handle {
+  width: 158px;
+}
+.ios4 .ios-toggle .handle b {
+  width: 38px;
+  height: 26px;
+  border: 1px solid #919191;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  left: -4px;
+}
+.ios4 .ios-toggle .handle:before, .ios4 .ios-toggle .handle:after {
+  width: 60px;
+  top: -7px;
+  font-size: 16px;
+}
+.ios4 .ios-toggle .handle:after {
+  position: relative;
+  left: -8px;
+}
+.ios4 .ios-toggle.on .handle {
+  -webkit-transform: translateX(1px);
+  -moz-transform: translateX(1px);
+  -ms-transform: translateX(1px);
+  -o-transform: translateX(1px);
+  transform: translateX(1px);
+}
+.ios4 .ios-toggle.off:before {
+  margin-left: -100%;
+}
+.ios4 .ios-toggle.off .handle {
+  -webkit-transform: translateX(-56px);
+  -moz-transform: translateX(-56px);
+  -ms-transform: translateX(-56px);
+  -o-transform: translateX(-56px);
+  transform: translateX(-56px);
+}
+.ios5 .ios-toggle {
+  width: 72px;
+  height: 24px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 10px 0 rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 10px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 10px 0 rgba(0, 0, 0, 0.03);
+  -webkit-transition: background-position 0.15s ease-in-out;
+  -moz-transition: background-position 0.15s ease-in-out;
+  -o-transition: background-position 0.15s ease-in-out;
+  transition: background-position 0.15s ease-in-out;
+  background: #FFF;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #0088cc), color-stop(50%, #0088cc), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee));
+  background: -webkit-linear-gradient(left, #0088cc, #0088cc 50%, #eeeeee 50%, #eeeeee);
+  background: -moz-linear-gradient(left, #0088cc, #0088cc 50%, #eeeeee 50%, #eeeeee);
+  background: -o-linear-gradient(left, #0088cc, #0088cc 50%, #eeeeee 50%, #eeeeee);
+  background: linear-gradient(left, #0088cc, #0088cc 50%, #eeeeee 50%, #eeeeee);
+  background: linear-gradient(to right, #0088cc, #0088cc 50%, #eeeeee 50%, #eeeeee);
+  -webkit-background-size: 200%;
+  -moz-background-size: 200%;
+  -o-background-size: 200%;
+  background-size: 200%;
+}
+.ios5 .ios-toggle .handle {
+  width: 120px;
+}
+.ios5 .ios-toggle .handle b {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #666;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+.ios5 .ios-toggle .handle:before, .ios5 .ios-toggle .handle:after {
+  width: 48px;
+  top: -6px;
+}
+.ios5 .ios-toggle.on {
+  background-position: 0 0;
+}
+.ios5 .ios-toggle.on .handle {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.ios5 .ios-toggle.off {
+  background-position: 100% 0;
+}
+.ios5 .ios-toggle.off .handle {
+  -webkit-transform: translateX(-48px);
+  -moz-transform: translateX(-48px);
+  -ms-transform: translateX(-48px);
+  -o-transform: translateX(-48px);
+  transform: translateX(-48px);
+}
